@@ -396,7 +396,7 @@ impl Server {
             server_port: http_port,
             ctrl_port: 32768,
             max_open_sockets: if https_port != 0 { 4 } else { 7 },
-            max_uri_handlers: 8,
+            max_uri_handlers: 16,
             max_resp_headers: 8,
             backlog_conn: 5,
             lru_purge_enable: https_port != 0,
